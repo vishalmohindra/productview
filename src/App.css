@@ -1,0 +1,131 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container for main content */
+.main-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 2rem;
+}
+
+/* Headings */
+h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Product List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Buttons */
+button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button.edit-btn {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  margin-right: 10px;
+}
+
+button.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+button.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: 1px solid #dc3545;
+}
+
+button.delete-btn:hover {
+  background-color: #a71d2a;
+}
+
+button.add-btn {
+  background-color: #28a745;
+  color: white;
+  border: 1px solid #28a745;
+  margin-bottom: 1rem;
+}
+
+button.add-btn:hover {
+  background-color: #1e7e34;
+}
+
+/* Forms */
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  width: 95%;
+  padding: 6px;
+  margin-bottom: 1rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Loader */
+.loader {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
